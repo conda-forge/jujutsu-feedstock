@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jujutsu
-  version: "0.41.0"
+  version: "0.43.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/jj-vcs/jj/archive/v${{ version }}.tar.gz
-  sha256: 135bf1df883a7f50c96907d87a246ec9fbe885d2d4fe4d1bf7d34d98dec910ba
+  sha256: 5d230327737ee506b716c6ae5ac824c49951c34e117a024dc7aa38819809ea6c
 
 build:
   number: 0
