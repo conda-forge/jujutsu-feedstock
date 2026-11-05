@@ -22,7 +22,7 @@ requirements:
     - ${{ stdlib("c") }}
     - cargo-bundle-licenses
     - if: linux
-      then: pkg-config
+      then: pkgconf
   host:
     - if: linux
       then: openssl
