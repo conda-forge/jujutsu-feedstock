@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jujutsu
-  version: "0.46.0"
+  version: "0.47.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/jj-vcs/jj/archive/v${{ version }}.tar.gz
-  sha256: 6489f79d59dc4f9c11230c51d309dc9c6ec392921772b738546966c494b6d72c
+  sha256: 838fb5ddbf474ccee6639ce68835cedf88c8285b5c812599c56688286fb0b7a6
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - ${{ stdlib("c") }}
     - cargo-bundle-licenses
     - if: linux
-      then: pkg-config
+      then: pkgconfig
   host:
     - if: linux
       then: openssl
@@ -42,11 +42,11 @@ about:
     - LICENSE
     - THIRDPARTY.yml
   description: |
-    Jujutsu is a powerful version control system for software projects. 
-    You use it to get a copy of your code, track changes to the code, and 
-    finally publish those changes for others to see and use. It is designed 
-    from the ground up to be easy to use—whether you're new or experienced, 
-    working on brand new projects alone, or large scale software projects 
+    Jujutsu is a powerful version control system for software projects.
+    You use it to get a copy of your code, track changes to the code, and
+    finally publish those changes for others to see and use. It is designed
+    from the ground up to be easy to use—whether you're new or experienced,
+    working on brand new projects alone, or large scale software projects
     with large histories and teams.
   homepage: https://jj-vcs.github.io/jj
   repository: https://github.com/jj-vcs/jj
