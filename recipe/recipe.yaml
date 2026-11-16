@@ -24,6 +24,9 @@ requirements:
     - if: linux
       then: pkgconfig
   host:
+    - ${{ compiler('c') }}
+    - ${{ compiler('rust') }}
+    - ${{ stdlib("c") }}
     - if: linux
       then: openssl
 
